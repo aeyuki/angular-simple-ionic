@@ -1,0 +1,6 @@
+parent.component.html
+<h1>这是Paraent1</h1>
+<app-child [sendChild]="VarFathceName" age="13" [sendFn]="tt"> </app-child>
+<br />
+<h1>这是Paraent2</h1>
+<app-in-out [in]="'传输进入'" (out)="out($event)"></app-in-out>

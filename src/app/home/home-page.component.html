@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ homeTitile }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <img
+      alt="A Travel Guide for How to Visit Beijing on a Budget"
+      src="https://www.tripsavvy.com/thmb/L4R1vf6Y-G4ppPgfxHKw4BA2dc8=/2121x1414/filters:fill(auto,1)/GettyImages-4894349271-59e8e9a8d088c000119103c6.jpg"
+    />
+    <ion-card-header>
+      <ion-card-title [title]="homeTitile">北京-故宫-天坛</ion-card-title>
+      <ion-card-subtitle>祭天祈谷的地方</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      在一个古老而神秘的北京城中，隐藏着一座宏伟的天坛。这座天坛是明清两代皇帝祭天祈谷的地方，也是中华五千年文明的重要遗产。
+      天坛始建于明朝永乐年间，整个建筑布局严谨，层次分明。最引人注目的是祈年殿，它是中国古建筑的代表之一，以其雄伟的气势和精美的雕刻而闻名。
+      在祈年殿的南侧，有一座巨大的圆形石台，叫做“圜丘”。每年冬至，皇帝都会在这里祭天，向天地诸神祈求风调雨顺、五谷丰登。圜丘下面埋藏着许多珍贵的历史文物，包括玉器、陶瓷和古代艺术品。
+      天坛内还有许多神秘而有趣的故事和传说。其中最著名的是关于“天心石”的传说。据说这块石头是宇宙的中心，如果人站在上面，可以与天地神灵沟通，获得神秘的力量。
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more,
+      nothing less.
+    </ion-card-content>
+
+    <ion-button fill="clear" title="Action 1">Action 1</ion-button>
+    <ion-button fill="clear" title="Action 2">Action 2</ion-button>
+
+    <!-- <ion-button
+      routerLink="['/home/details/']"
+      (click)="goToPage()"
+      [childToFatcher]="dataFromFatcher"
+    >
+      Go to Child Component
+    </ion-button> -->
+
+    <router-outlet></router-outlet>
+  </ion-card>
+</ion-content>
